@@ -22,10 +22,10 @@ box-shadow:0 15px 40px rgba(0,0,0,.15);
 .container{
 max-width:1800px;
 margin:auto;
-padding:25px;
+padding:20px;
 display:grid;
 grid-template-columns:280px 1fr 280px;
-gap:25px;
+gap:20px;
 }
 .sidebar{
 background:#fff;
