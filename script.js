@@ -272,3 +272,21 @@ setInterval(
     loadPortalData,
     AUTO_REFRESH_INTERVAL
 );
+const menuBtn =
+document.getElementById("menuBtn");
+
+const leftSidebar =
+document.getElementById("leftLinks");
+
+menuBtn?.addEventListener("click",()=>{
+
+    if(leftSidebar.style.display==="block"){
+
+        leftSidebar.style.display="none";
+
+    }else{
+
+        leftSidebar.style.display="block";
+    }
+
+});
