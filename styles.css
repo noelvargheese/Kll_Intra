@@ -1,3 +1,7 @@
+/* ===================================
+   GOVERNMENT INFORMATION PORTAL
+=================================== */
+
 *{
     margin:0;
     padding:0;
@@ -5,82 +9,196 @@
 }
 
 body{
-    font-family:Arial, sans-serif;
-    background:#f4f6f9;
+    font-family:Segoe UI, Arial, sans-serif;
+    background:#f5f7fb;
+    color:#333;
 }
 
-.topbar{
+/* HEADER */
+
+.top-header{
     background:#003366;
     color:white;
-    padding:15px 25px;
+    padding:20px;
+    box-shadow:0 2px 8px rgba(0,0,0,.15);
 }
 
-.logo-area{
+.logo-section{
     display:flex;
     align-items:center;
     gap:15px;
 }
 
-.logo-area img{
-    width:60px;
-    height:60px;
+.logo-section img{
+    width:70px;
+    height:70px;
 }
+
+.logo-section h1{
+    font-size:30px;
+    margin-bottom:5px;
+}
+
+.logo-section p{
+    opacity:.9;
+}
+
+/* NAVIGATION */
+
+.main-nav{
+    background:white;
+    display:flex;
+    justify-content:center;
+    gap:20px;
+    padding:15px;
+    box-shadow:0 2px 6px rgba(0,0,0,.08);
+}
+
+.main-nav a{
+    color:#003366;
+    text-decoration:none;
+    font-weight:600;
+    padding:10px 15px;
+    border-radius:6px;
+    transition:.3s;
+}
+
+.main-nav a:hover{
+    background:#003366;
+    color:white;
+}
+
+/* HERO */
+
+.hero{
+    margin:20px;
+    background:linear-gradient(135deg,#003366,#0055aa);
+    color:white;
+    padding:50px;
+    border-radius:15px;
+    box-shadow:0 4px 15px rgba(0,0,0,.15);
+}
+
+.hero h2{
+    font-size:40px;
+    margin-bottom:15px;
+}
+
+.hero p{
+    font-size:18px;
+}
+
+/* SEARCH */
+
+#searchInput{
+    width:100%;
+    padding:14px;
+    margin-top:20px;
+    border:none;
+    border-radius:8px;
+    font-size:15px;
+}
+
+/* LAYOUT */
 
 .container{
     display:grid;
     grid-template-columns:250px 1fr 250px;
-    min-height:calc(100vh - 90px);
+    gap:20px;
+    padding:20px;
 }
 
+/* SIDEBARS */
+
 .sidebar{
-    background:#0b3d91;
-    color:white;
+    background:white;
+    border-radius:12px;
     padding:20px;
+    box-shadow:0 2px 12px rgba(0,0,0,.08);
+    height:fit-content;
 }
 
 .sidebar h2{
+    color:#003366;
     margin-bottom:15px;
+    border-bottom:2px solid #003366;
+    padding-bottom:10px;
 }
 
-.sidebar a{
-    display:block;
-    color:white;
+/* QUICK LINKS */
+
+.links-container{
+    display:flex;
+    flex-direction:column;
+    gap:10px;
+}
+
+.links-container a{
     text-decoration:none;
-    padding:10px;
-    margin-bottom:8px;
-    background:rgba(255,255,255,0.1);
-    border-radius:6px;
+    color:#333;
+    background:#f5f7fb;
+    padding:12px;
+    border-radius:8px;
+    font-weight:600;
+    transition:.3s;
 }
 
-.sidebar a:hover{
-    background:rgba(255,255,255,0.2);
+.links-container a:hover{
+    background:#003366;
+    color:white;
 }
+
+/* MAIN CONTENT */
 
 .main-content{
-    padding:20px;
+    display:flex;
+    flex-direction:column;
+    gap:20px;
 }
 
-.hero{
+/* SECTIONS */
+
+.section{
+    background:white;
+    padding:20px;
+    border-radius:12px;
+    box-shadow:0 2px 12px rgba(0,0,0,.08);
+}
+
+.section h2{
+    color:#003366;
     margin-bottom:20px;
 }
 
-#searchInput{
-    width:100%;
-    padding:12px;
-    border:1px solid #ccc;
-    border-radius:6px;
-}
+/* ANNOUNCEMENTS */
 
 .card-grid{
     display:grid;
-    gap:15px;
+    grid-template-columns:
+        repeat(auto-fit,minmax(320px,1fr));
+    gap:20px;
 }
 
 .portal-card{
     background:white;
-    border-radius:10px;
-    padding:15px;
-    box-shadow:0 2px 8px rgba(0,0,0,0.1);
+    border-radius:12px;
+    overflow:hidden;
+    box-shadow:0 2px 10px rgba(0,0,0,.08);
+    transition:.3s;
+}
+
+.portal-card:hover{
+    transform:translateY(-5px);
+}
+
+.portal-card img{
+    width:100%;
+    height:220px;
+    object-fit:cover;
+}
+
+.portal-card-content{
+    padding:20px;
 }
 
 .portal-card h3{
@@ -88,46 +206,167 @@ body{
     margin-bottom:10px;
 }
 
-.portal-card img{
-    width:100%;
-    margin-top:10px;
-    border-radius:8px;
+.portal-card p{
+    color:#555;
+    margin-bottom:10px;
 }
 
 .meta{
-    color:#666;
+    color:#777;
     font-size:13px;
     margin-top:10px;
 }
 
 .action-buttons{
-    margin-top:10px;
+    margin-top:15px;
+    display:flex;
+    gap:10px;
+    flex-wrap:wrap;
 }
 
 .action-buttons a{
-    display:inline-block;
-    margin-right:10px;
-    padding:8px 12px;
+    text-decoration:none;
     background:#003366;
+    color:white;
+    padding:8px 15px;
+    border-radius:6px;
+    font-size:14px;
+}
+
+.action-buttons a:hover{
+    background:#0055aa;
+}
+
+/* CIRCULARS */
+
+.circular-item{
+    background:white;
+    padding:15px;
+    border-bottom:1px solid #ddd;
+}
+
+.circular-item:last-child{
+    border-bottom:none;
+}
+
+.pdf-btn{
+    display:inline-block;
+    margin-top:10px;
+    background:#c62828;
     color:white;
     text-decoration:none;
-    border-radius:5px;
+    padding:8px 12px;
+    border-radius:6px;
 }
+
+/* EVENTS */
+
+.timeline{
+    position:relative;
+    margin-left:20px;
+}
+
+.timeline::before{
+    content:"";
+    position:absolute;
+    left:10px;
+    top:0;
+    bottom:0;
+    width:3px;
+    background:#003366;
+}
+
+.event-item{
+    position:relative;
+    padding-left:40px;
+    margin-bottom:25px;
+}
+
+.event-item::before{
+    content:"";
+    width:18px;
+    height:18px;
+    background:#003366;
+    border-radius:50%;
+    position:absolute;
+    left:2px;
+    top:5px;
+}
+
+.event-date{
+    color:#003366;
+    font-weight:700;
+}
+
+/* STATS */
+
+.stats{
+    display:grid;
+    grid-template-columns:
+        repeat(auto-fit,minmax(200px,1fr));
+    gap:20px;
+}
+
+.stat-card{
+    background:white;
+    padding:25px;
+    text-align:center;
+    border-radius:12px;
+    box-shadow:0 2px 10px rgba(0,0,0,.08);
+}
+
+.stat-card h3{
+    color:#003366;
+    font-size:36px;
+}
+
+.stat-card p{
+    color:#666;
+}
+
+/* FOOTER */
 
 footer{
-    text-align:center;
     background:#003366;
     color:white;
-    padding:15px;
+    text-align:center;
+    padding:20px;
+    margin-top:20px;
 }
 
-@media(max-width:1000px){
+/* RESPONSIVE */
+
+@media(max-width:1100px){
 
     .container{
         grid-template-columns:1fr;
     }
 
     .sidebar{
-        min-height:auto;
+        order:2;
+    }
+
+    .main-content{
+        order:1;
+    }
+}
+
+@media(max-width:768px){
+
+    .hero{
+        padding:30px;
+    }
+
+    .hero h2{
+        font-size:30px;
+    }
+
+    .logo-section{
+        flex-direction:column;
+        text-align:center;
+    }
+
+    .main-nav{
+        flex-wrap:wrap;
     }
 }
