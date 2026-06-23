@@ -1,22 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Government Information Portal</title>
-
-    <link rel="stylesheet" href="styles.css">
-
-    <script src="config.js"></script>
-    <script src="script.js" defer></script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Government Information Portal</title>
+<link rel="stylesheet" href="styles.css">
+<script src="config.js"></script>
+<script src="script.js" defer></script>
 </head>
 <body>
 
-<header class="topbar">
-    <div class="logo-area">
-        <div>
+<header class="top-header">
+    <div class="logo-section">
+        <div class="title-block">
             <h1>Government Information Portal</h1>
-            <p>Announcements • Circulars • Events</p>
+            <p>Announcements • Circulars • Events • Public Resources</p>
         </div>
     </div>
 </header>
@@ -31,26 +29,33 @@
     <main class="main-content">
 
         <section class="hero">
-            <h2>Latest Information</h2>
-            <input
-                type="text"
-                id="searchInput"
-                placeholder="Search announcements, circulars or events..."
-            >
+            <h2>Citizen Information Dashboard</h2>
+            <p>Access the latest announcements, circulars, notices and events.</p>
+            <input type="text" id="searchInput"
+                placeholder="Search announcements, circulars or events...">
         </section>
 
-        <section>
-            <h2>Announcements</h2>
+        <section class="section">
+            <div class="section-header">
+                <h2>📢 Announcements</h2>
+                <span>Latest Updates</span>
+            </div>
             <div id="announcements" class="card-grid"></div>
         </section>
 
-        <section>
-            <h2>Circulars</h2>
+        <section class="section">
+            <div class="section-header">
+                <h2>📄 Circulars</h2>
+                <span>Official Notices</span>
+            </div>
             <div id="circulars" class="card-grid"></div>
         </section>
 
-        <section>
-            <h2>Events</h2>
+        <section class="section">
+            <div class="section-header">
+                <h2>📅 Events</h2>
+                <span>Upcoming Programs</span>
+            </div>
             <div id="events" class="card-grid"></div>
         </section>
 
@@ -63,8 +68,8 @@
 
 </div>
 
-<footer>
-    <p>Government Information Portal</p>
+<footer class="footer">
+Government Information Portal
 </footer>
 
 </body>
