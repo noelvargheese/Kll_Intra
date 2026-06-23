@@ -1,550 +1,105 @@
-/* ===================================
-   DIGILOCKER STYLE GOV PORTAL
-=================================== */
 
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-}
-
+*{margin:0;padding:0;box-sizing:border-box}
 :root{
-    --primary:#0b4d94;
-    --primary-dark:#083d73;
-    --accent:#ff9800;
-    --bg:#f3f6fb;
-    --card:#ffffff;
-    --text:#1f2937;
-    --muted:#6b7280;
-
-    --shadow:
-    0 4px 20px rgba(0,0,0,.08);
-
-    --radius:18px;
+--primary:#0b4d94;
+--primary-dark:#083d73;
+--bg:#f4f7fc;
+--text:#1f2937;
 }
-
 body{
-    font-family:'Segoe UI',sans-serif;
-    background:var(--bg);
-    color:var(--text);
+font-family:Segoe UI,sans-serif;
+background:#f4f7fc;
+color:var(--text);
 }
-
-/* ==========================
-HEADER
-========================== */
-
 .top-header{
-
-    width:100%;
-
-    background:
-    linear-gradient(
-    135deg,
-    #003366,
-    #0b4d94
-    );
-
-    color:white;
-
-    padding:35px 50px;
-
-    box-shadow:
-    0 4px 15px rgba(0,0,0,.15);
+background:linear-gradient(135deg,#002855,#0b4d94);
+padding:55px;
+color:#fff;
+box-shadow:0 15px 40px rgba(0,0,0,.15);
 }
-
-.logo-section{
-    display:flex;
-    align-items:center;
-    gap:20px;
-}
-
-.logo-section img{
-    width:75px;
-    height:75px;
-    object-fit:contain;
-}
-
-.logo-section h1{
-    font-size:3rem;
-    font-weight:700;
-    margin-bottom:8px;
-}
-
-.logo-section p{
-    font-size:1.15rem;
-    opacity:.9;
-}
-
-/* ==========================
-NAVBAR
-========================== */
-
-.main-nav{
-    background:white;
-    display:flex;
-    justify-content:center;
-    gap:30px;
-    padding:15px;
-    box-shadow:
-    0 2px 10px rgba(0,0,0,.05);
-
-    position:sticky;
-    top:0;
-    z-index:100;
-}
-
-.main-nav a{
-    text-decoration:none;
-    color:var(--primary);
-    font-weight:600;
-    padding:10px 16px;
-    border-radius:10px;
-    transition:.25s;
-}
-
-.main-nav a:hover{
-    background:var(--primary);
-    color:white;
-}
-
-/* ==========================
-MAIN LAYOUT
-========================== */
-
+.logo-section h1{font-size:3rem}
+.logo-section p{margin-top:10px;opacity:.9}
 .container{
-
-    max-width:1800px;
-
-    margin:auto;
-
-    padding:25px;
-
-    display:grid;
-
-    grid-template-columns:
-    280px
-    minmax(0,1fr)
-    280px;
-
-    gap:25px;
-
-    align-items:start;
+max-width:1800px;
+margin:auto;
+padding:25px;
+display:grid;
+grid-template-columns:280px 1fr 280px;
+gap:25px;
 }
-
-/* ==========================
-LEFT + RIGHT SIDEBAR
-========================== */
-
 .sidebar{
-
-    background:white;
-
-    border-radius:22px;
-
-    padding:22px;
-
-    box-shadow:var(--shadow);
-
-    position:sticky;
-
-    top:90px;
+background:#fff;
+border-radius:28px;
+padding:24px;
+position:sticky;
+top:20px;
+height:max-content;
+box-shadow:0 12px 30px rgba(0,0,0,.08);
 }
-
 .sidebar h2{
-
-    color:var(--primary);
-
-    margin-bottom:18px;
-
-    padding-bottom:12px;
-
-    border-bottom:3px solid var(--primary);
-
-    font-size:2rem;
+margin-bottom:20px;
+color:var(--primary);
+border-bottom:3px solid var(--primary);
+padding-bottom:10px;
 }
-
-/* ==========================
-QUICK LINKS
-========================== */
-
-.links-container{
-
-    display:flex;
-
-    flex-direction:column;
-
-    gap:14px;
-}
-
+.links-container{display:flex;flex-direction:column;gap:12px}
 .links-container a{
-
-    display:flex;
-
-    align-items:center;
-
-    gap:15px;
-
-    padding:16px;
-
-    border-radius:14px;
-
-    text-decoration:none;
-
-    color:#333;
-
-    background:#fafbfc;
-
-    border:1px solid #e5e7eb;
-
-    transition:.25s;
+background:#fff;
+padding:16px;
+border-radius:16px;
+text-decoration:none;
+color:#333;
+border:1px solid #e5e7eb;
 }
-
-.links-container a:hover{
-
-    transform:translateX(5px);
-
-    background:#f1f6ff;
-}
-
-.links-container img{
-
-    width:50px;
-
-    height:50px;
-
-    object-fit:cover;
-
-    border-radius:10px;
-}
-
-/* ==========================
-CENTER CONTENT
-========================== */
-
-.main-content{
-
-    display:flex;
-
-    flex-direction:column;
-
-    gap:25px;
-}
-
-/* ==========================
-WELCOME BANNER
-========================== */
-
+.main-content{display:flex;flex-direction:column;gap:25px}
 .hero{
-
-    background:
-    linear-gradient(
-    135deg,
-    #003366,
-    #0b4d94
-    );
-
-    color:white;
-
-    border-radius:24px;
-
-    padding:45px;
-
-    box-shadow:var(--shadow);
+background:linear-gradient(135deg,#003366,#0b4d94);
+padding:60px;
+border-radius:30px;
+color:#fff;
 }
-
-.hero h2{
-
-    font-size:3rem;
-
-    margin-bottom:20px;
-}
-
-.hero p{
-
-    font-size:1.1rem;
-
-    opacity:.95;
-}
-
-/* ==========================
-SEARCH
-========================== */
-
+.hero h2{font-size:3rem;margin-bottom:15px}
 #searchInput{
-
-    width:100%;
-
-    margin-top:25px;
-
-    border:none;
-
-    padding:18px 22px;
-
-    border-radius:14px;
-
-    font-size:1rem;
-
-    box-shadow:
-    inset 0 0 0 1px #ddd;
+margin-top:20px;
+width:100%;
+padding:18px;
+border:none;
+border-radius:14px;
 }
-
-#searchInput:focus{
-
-    outline:none;
-
-    box-shadow:
-    0 0 0 4px rgba(11,77,148,.15);
-}
-
-/* ==========================
-SECTIONS
-========================== */
-
 .section{
-
-    background:white;
-
-    border-radius:22px;
-
-    padding:25px;
-
-    box-shadow:var(--shadow);
+background:#fff;
+padding:30px;
+border-radius:28px;
+box-shadow:0 10px 30px rgba(0,0,0,.06);
 }
-
-.section h2{
-
-    color:var(--primary);
-
-    margin-bottom:20px;
-
-    font-size:2rem;
+.section-header{
+display:flex;
+justify-content:space-between;
+margin-bottom:20px;
 }
-
-/* ==========================
-CARDS
-========================== */
-
-.card-grid{
-
-    display:grid;
-
-    gap:20px;
-}
-
+.card-grid{display:grid;gap:20px}
 .portal-card{
-
-    background:white;
-
-    border-radius:18px;
-
-    overflow:hidden;
-
-    border:1px solid #edf0f5;
-
-    display:grid;
-
-    grid-template-columns:
-    180px
-    1fr;
-
-    transition:.25s;
+display:grid;
+grid-template-columns:240px 1fr;
+background:#fff;
+border-radius:24px;
+overflow:hidden;
+box-shadow:0 8px 25px rgba(0,0,0,.08);
 }
-
-.portal-card:hover{
-
-    transform:translateY(-4px);
-
-    box-shadow:
-    0 10px 25px rgba(0,0,0,.08);
-}
-
 .portal-card img{
-
-    width:180px;
-
-    height:140px;
-
-    object-fit:cover;
+width:100%;
+height:220px;
+object-fit:cover;
 }
-
-.portal-card-content{
-
-    padding:20px;
+.portal-card-content{padding:25px}
+.footer{
+margin-top:30px;
+padding:25px;
+text-align:center;
+background:#002855;
+color:white;
 }
-
-.portal-card h3{
-
-    color:var(--primary);
-
-    margin-bottom:10px;
-
-    font-size:1.4rem;
-}
-
-.portal-card p{
-
-    color:var(--muted);
-
-    line-height:1.7;
-}
-
-/* ==========================
-META
-========================== */
-
-.meta{
-
-    margin-top:15px;
-
-    color:#6b7280;
-
-    font-size:.9rem;
-}
-
-/* ==========================
-BUTTONS
-========================== */
-
-.action-buttons{
-
-    margin-top:15px;
-
-    display:flex;
-
-    gap:10px;
-}
-
-.action-buttons a{
-
-    text-decoration:none;
-
-    background:var(--primary);
-
-    color:white;
-
-    padding:10px 16px;
-
-    border-radius:10px;
-
-    font-weight:600;
-}
-
-.action-buttons a:hover{
-
-    background:var(--primary-dark);
-}
-
-/* ==========================
-CIRCULARS
-========================== */
-
-.circular-item{
-
-    display:flex;
-
-    justify-content:space-between;
-
-    align-items:center;
-
-    padding:18px;
-
-    border-bottom:1px solid #edf0f5;
-}
-
-.circular-item:hover{
-
-    background:#f8fbff;
-}
-
-.pdf-btn{
-
-    background:#d32f2f;
-
-    color:white;
-
-    text-decoration:none;
-
-    padding:8px 14px;
-
-    border-radius:8px;
-}
-
-/* ==========================
-EVENTS
-========================== */
-
-.event-item{
-
-    background:#f8fbff;
-
-    border-left:4px solid var(--primary);
-
-    border-radius:12px;
-
-    padding:16px 20px;
-
-    margin-bottom:14px;
-}
-
-.event-date{
-
-    color:var(--primary);
-
-    font-weight:700;
-
-    margin-bottom:6px;
-}
-
-/* ==========================
-RESPONSIVE
-========================== */
-
 @media(max-width:1200px){
-
-    .container{
-
-        grid-template-columns:1fr;
-    }
-
-    .sidebar{
-
-        position:static;
-    }
-}
-
-@media(max-width:768px){
-
-    .logo-section{
-
-        flex-direction:column;
-
-        text-align:center;
-    }
-
-    .logo-section h1{
-
-        font-size:2rem;
-    }
-
-    .hero{
-
-        padding:30px;
-    }
-
-    .hero h2{
-
-        font-size:2rem;
-    }
-
-    .portal-card{
-
-        grid-template-columns:1fr;
-    }
-
-    .portal-card img{
-
-        width:100%;
-
-        height:220px;
-    }
+.container{grid-template-columns:1fr}
+.sidebar{position:static}
 }
