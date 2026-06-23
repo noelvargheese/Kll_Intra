@@ -1,0 +1,205 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:Segoe UI, Arial, sans-serif;
+    background:#f1f5f9;
+    color:#333;
+}
+
+.header{
+    background:#003366;
+    color:white;
+    padding:20px;
+    text-align:center;
+    box-shadow:0 2px 8px rgba(0,0,0,0.2);
+}
+
+.header h1{
+    font-size:28px;
+    margin:0;
+}
+
+.container{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(380px,1fr));
+    gap:20px;
+    padding:20px;
+}
+
+.panel{
+    background:white;
+    border-radius:12px;
+    padding:20px;
+    box-shadow:0 2px 12px rgba(0,0,0,0.08);
+    border-top:5px solid #003366;
+}
+
+.panel h2{
+    color:#003366;
+    margin-bottom:15px;
+}
+
+.panel input,
+.panel textarea,
+.panel select{
+    width:100%;
+    padding:12px;
+    margin-top:10px;
+    border:1px solid #d1d5db;
+    border-radius:8px;
+    font-size:14px;
+}
+
+.panel textarea{
+    min-height:120px;
+    resize:vertical;
+}
+
+.panel input:focus,
+.panel textarea:focus{
+    outline:none;
+    border-color:#003366;
+    box-shadow:0 0 5px rgba(0,51,102,0.3);
+}
+
+.panel button{
+    width:100%;
+    margin-top:15px;
+    padding:12px;
+    background:#003366;
+    color:white;
+    border:none;
+    border-radius:8px;
+    font-size:15px;
+    font-weight:600;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+.panel button:hover{
+    background:#004b99;
+}
+
+.records{
+    padding:20px;
+}
+
+.records h2{
+    color:#003366;
+    margin-bottom:20px;
+}
+
+.record-card{
+    background:white;
+    border-radius:10px;
+    padding:15px;
+    margin-bottom:15px;
+    box-shadow:0 2px 8px rgba(0,0,0,0.08);
+}
+
+.record-card strong{
+    color:#003366;
+    font-size:18px;
+}
+
+.record-card img{
+    max-width:200px;
+    margin-top:10px;
+    border-radius:8px;
+}
+
+.record-actions{
+    margin-top:15px;
+}
+
+.delete-btn{
+    background:#c62828;
+    color:white;
+    border:none;
+    padding:10px 15px;
+    border-radius:6px;
+    cursor:pointer;
+    font-weight:bold;
+}
+
+.delete-btn:hover{
+    background:#a00000;
+}
+
+.view-btn{
+    background:#1565c0;
+    color:white;
+    border:none;
+    padding:10px 15px;
+    border-radius:6px;
+    cursor:pointer;
+    margin-left:10px;
+}
+
+.view-btn:hover{
+    background:#0d47a1;
+}
+
+.loading{
+    text-align:center;
+    padding:40px;
+    font-size:18px;
+    color:#666;
+}
+
+.success{
+    background:#e8f5e9;
+    color:#2e7d32;
+    padding:10px;
+    border-radius:6px;
+    margin-top:10px;
+}
+
+.error{
+    background:#ffebee;
+    color:#c62828;
+    padding:10px;
+    border-radius:6px;
+    margin-top:10px;
+}
+
+hr{
+    border:none;
+    height:1px;
+    background:#d1d5db;
+    margin:20px;
+}
+
+@media(max-width:900px){
+
+    .container{
+        grid-template-columns:1fr;
+    }
+
+    .header h1{
+        font-size:22px;
+    }
+
+    .panel{
+        padding:15px;
+    }
+}
+
+@media(max-width:600px){
+
+    body{
+        font-size:14px;
+    }
+
+    .panel button{
+        padding:10px;
+    }
+
+    .record-card{
+        padding:12px;
+    }
+}
