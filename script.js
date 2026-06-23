@@ -144,7 +144,65 @@ function renderCards(data, container, type) {
         }
 
         card.innerHTML = `
-            <h3>${item.Title || ""}</h3>
+
+    ${
+        item.Image
+        ?
+        `<img src="${item.Image}" alt="${item.Title}">`
+        :
+        ""
+    }
+
+    <div class="portal-card-content">
+
+        <h3>${item.Title || ""}</h3>
+
+        <p>${item.Content || ""}</p>
+
+        <div class="meta">
+
+            ${
+                item.Writer
+                ?
+                `By ${item.Writer}<br>`
+                :
+                ""
+            }
+
+            ${dateText}
+
+        </div>
+
+        <div class="action-buttons">
+
+            ${
+                item.PDF
+                ?
+                `
+                <a href="${item.PDF}" target="_blank">
+                PDF
+                </a>
+                `
+                :
+                ""
+            }
+
+            ${
+                item.Link
+                ?
+                `
+                <a href="${item.Link}" target="_blank">
+                Open
+                </a>
+                `
+                :
+                ""
+            }
+
+        </div>
+
+    </div>
+`;
 
             <p>${item.Content || ""}</p>
 
