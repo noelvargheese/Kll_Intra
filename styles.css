@@ -433,6 +433,19 @@ body{
 .footer-content{
     max-width:1400px;
     margin:auto;
+
+    display:flex;
+    justify-content:space-between;
+    align-items:flex-start;
+    gap:50px;
+}
+
+.footer-column{
+    flex:1;
+}
+
+.footer-column:last-child{
+    text-align:right;
 }
 
 .footer h2{
@@ -514,7 +527,13 @@ body{
     .top-header{
         padding:30px 20px;
     }
+    .footer-content{
+        flex-direction:column;
+    }
 
+    .footer-column:last-child{
+        text-align:left;
+    }
     .logo-section h1{
         font-size:2rem;
     }
