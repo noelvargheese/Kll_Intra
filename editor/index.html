@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>KLL Editor/KLL संपादक</title>
+<title>Government Portal Editor</title>
 
 <link rel="stylesheet" href="editor.css">
 
@@ -14,151 +14,161 @@
 <body>
 
 <header class="header">
-    <h1>Editor/संपादक</h1>
+    <h1>Government Portal Editor</h1>
 </header>
 
 <div class="container">
 
-        <section class="panel">
+    <!-- Announcements -->
 
-        <h2>Add Announcement/घोषणा जोड़ें</h2>
+    <section class="panel">
 
-        <input id="[announcementTitle]/[घोषणाशीर्षक]" placeholder="[Title]/[शीर्षक]">
+        <h2>Add Announcement</h2>
+
+        <input id="announcementTitle" placeholder="Title">
 
         <textarea
-            id="[announcementContent]/[घोषणासामग्री]"
-            placeholder="[Content]/[सामग्री]"></textarea>
+            id="announcementContent"
+            placeholder="Content"></textarea>
 
         <input
-            id="[announcementWriter]/[घोषणालेखक]"
-            placeholder="[Writer]/[लेखक]">
+            id="announcementWriter"
+            placeholder="Writer">
 
         <input
-            id="[announcementImage]/[घोषणाछवि]"
-            placeholder="[Image URL]/[छवि यूआरएल]">
+            id="announcementImage"
+            placeholder="Image URL">
 
         <input
-            id="[announcementPDF]/[घोषणापीडीएफ]"
-            placeholder="[PDF URL]/[पीडीएफ यूआरएल]">
+            id="announcementPDF"
+            placeholder="PDF URL">
 
         <input
-            id="[announcementLink]/[घोषणालिंक]"
-            placeholder="[External Link]/[बाहरी लिंक]">
+            id="announcementLink"
+            placeholder="External Link">
 
         <button onclick="addAnnouncement()">
-            Add Announcement/घोषणा जोड़ें
+            Add Announcement
         </button>
 
     </section>
 
-        <section class="panel">
+    <!-- Circular -->
 
-        <h2>Add Circular/परिपत्र जोड़ें</h2>
+    <section class="panel">
 
-        <input id="[circularTitle]/[परिपत्रशीर्षक]" placeholder="[Title]/[शीर्षक]">
+        <h2>Add Circular</h2>
+
+        <input id="circularTitle" placeholder="Title">
 
         <textarea
-            id="[circularContent]/[परिपत्रसामग्री]"
-            placeholder="[Content]/[सामग्री]"></textarea>
+            id="circularContent"
+            placeholder="Content"></textarea>
 
         <input
-            id="[circularWriter]/[परिपत्रलेखक]"
-            placeholder="[Writer]/[लेखक]">
+            id="circularWriter"
+            placeholder="Writer">
 
         <input
-            id="[circularImage]/[परिपत्रछवि]"
-            placeholder="[Image URL]/[छवि यूआरएल]">
+            id="circularImage"
+            placeholder="Image URL">
 
         <input
-            id="[circularPDF]/[परिपत्रपीडीएफ]"
-            placeholder="[PDF URL]/[पीडीएफ यूआरएल]">
+            id="circularPDF"
+            placeholder="PDF URL">
 
         <input
-            id="[circularLink]/[परिपत्रलिंक]"
-            placeholder="[External Link]/[बाहरी लिंक]">
+            id="circularLink"
+            placeholder="External Link">
 
         <button onclick="addCircular()">
-            Add Circular/परिपत्र जोड़ें
+            Add Circular
         </button>
 
     </section>
 
-        <section class="panel">
+    <!-- Events -->
 
-        <h2>Add Event/कार्यक्रम जोड़ें</h2>
+    <section class="panel">
 
-        <input id="[eventTitle]/[कार्यक्रमशीर्षक]" placeholder="[Title]/[शीर्षक]">
+        <h2>Add Event</h2>
+
+        <input id="eventTitle" placeholder="Title">
 
         <textarea
-            id="[eventContent]/[कार्यक्रमसामग्री]"
-            placeholder="[Content]/[सामग्री]"></textarea>
+            id="eventContent"
+            placeholder="Content"></textarea>
 
         <input
-            id="[eventWriter]/[कार्यक्रमलेखक]"
-            placeholder="[Writer]/[लेखक]">
+            id="eventWriter"
+            placeholder="Writer">
 
         <input
-            id="[eventImage]/[कार्यक्रमछवि]"
-            placeholder="[Image URL]/[छवि यूआरएल]">
+            id="eventImage"
+            placeholder="Image URL">
 
         <input
-            id="[eventPDF]/[कार्यक्रमपीडीएफ]"
-            placeholder="[PDF URL]/[पीडीएफ यूआरएल]">
+            id="eventPDF"
+            placeholder="PDF URL">
 
         <input
-            id="[eventLink]/[कार्यक्रमलिंक]"
-            placeholder="[External Link]/[बाहरी लिंक]">
+            id="eventLink"
+            placeholder="External Link">
 
         <input
             type="date"
-            id="[eventDate]/[कार्यक्रमतिथि]">
+            id="eventDate">
 
         <button onclick="addEvent()">
-            Add Event/कार्यक्रम जोड़ें
+            Add Event
         </button>
 
     </section>
 
-        <section class="panel">
+    <!-- Left Links -->
 
-        <h2>Add Left Link/बायां लिंक जोड़ें</h2>
+    <section class="panel">
 
-        <input
-            id="[leftName]/[बायांनाम]"
-            placeholder="[Name]/[नाम]">
+        <h2>Add Left Link</h2>
 
         <input
-            id="[leftURL]/[बायांयूआरएल]"
-            placeholder="[URL]/[यूआरएल]">
+            id="leftName"
+            placeholder="Name">
 
         <input
-            id="[leftImage]/[बायांछवि]"
-            placeholder="[Image URL]/[छवि यूआरएल]">
+            id="leftURL"
+            placeholder="URL">
+
+        <input
+            id="leftImage"
+            placeholder="Image URL">
 
         <button onclick="addLeftLink()">
-            Add Left Link/बायां लिंक जोड़ें
+            Add Left Link
         </button>
 
     </section>
 
-        <section class="panel">
+    <!-- Right Links -->
 
-        <h2>Add Right Link/दायां लिंक जोड़ें</h2>
+    <section class="panel">
 
-        <input
-            id="[rightName]/[दायांनाम]"
-            placeholder="[Name]/[नाम]">
+        <h2>Add Right Link</h2>
 
         <input
-            id="[rightURL]/[दायांयूआरएल]"
-            placeholder="[URL]/[यूआरएल]">
+            id="rightName"
+            placeholder="Name">
 
         <input
-            id="[rightImage]/[दायांछवि]"
-            placeholder="[Image URL]/[छवि यूआरएल]">
+            id="rightURL"
+            placeholder="URL">
+
+        <input
+            id="rightImage"
+            placeholder="Image URL">
 
         <button onclick="addRightLink()">
-            Add Right Link/दायां लिंक जोड़ें
+            Add Right Link
         </button>
 
     </section>
@@ -169,11 +179,11 @@
 
 <div class="records">
 
-    <h2>Current Records/वर्तमान रिकॉर्</h2>
+    <h2>Current Records</h2>
 
-    <div id="[recordsContainer]/[रिकॉर्डकंटेनर]">
+    <div id="recordsContainer">
 
-        Loading.../लोड हो रहा है...
+        Loading...
 
     </div>
 
@@ -181,3 +191,4 @@
 
 </body>
 </html>
+S
