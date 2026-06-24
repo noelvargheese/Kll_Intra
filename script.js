@@ -177,7 +177,7 @@ function renderCards(data, container, type) {
                         item.PDF
                         ? `
                         <a href="${item.PDF}" target="_blank">
-                            PDF
+                            Open SPDF Link
                         </a>
                         `
                         : ""
@@ -187,7 +187,7 @@ function renderCards(data, container, type) {
                         item.Link
                         ? `
                         <a href="${item.Link}" target="_blank">
-                            Open
+                            Open Link
                         </a>
                         `
                         : ""
