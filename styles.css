@@ -28,6 +28,32 @@ body{
     padding:40px 30px;
     background:linear-gradient(135deg,#002855 0%,#003f88 45%,#0b4d94 100%);
     box-shadow:0 8px 25px rgba(0,0,0,.15);
+
+/* Main English Title */
+.eng-title{
+    font-size: 3.2rem;      /* Increase as needed */
+    font-weight: 800;
+    margin-bottom: 10px;
+    line-height: 1.2;
+}
+
+/* Hindi Title */
+.hin-title{
+    font-size: 2.6rem;
+    font-weight: 700;
+    margin-bottom: 12px;
+    line-height: 1.2;
+}
+
+/* English Subtitle */
+.eng-sub{
+    font-size: 1.35rem;
+    margin-bottom: 6px;
+}
+
+/* Hindi Subtitle */
+.hin-sub{
+    font-size: 1.25rem;
 }
 
 .top-header::before{
@@ -290,7 +316,22 @@ body{
 .mobile-nav{display:none;}
 
 /* ================= RESPONSIVE ================= */
+@media (max-width: 768px){
 
+    .eng-title{
+        font-size: 2.2rem;
+    }
+
+    .hin-title{
+        font-size: 1.8rem;
+    }
+
+    .eng-sub,
+    .hin-sub{
+        font-size: 1rem;
+    }
+
+}
 @media(max-width:1200px){
 .container{grid-template-columns:1fr;}
 .sidebar{position:static;}
